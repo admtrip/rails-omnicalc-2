@@ -1,0 +1,11 @@
+<h1>Subtraction</h1>
+
+<%= form_with url: "/subtract/results", method: "get" do %>
+  <label for="first_number">Subtract this:</label>
+  <input type="text" id="first_number" name="first_number">
+
+  <label for="second_number">from this:</label>
+  <input type="text" id="second_number" name="second_number">
+
+  <button type="submit">Subtract!</button>
+<% end %>

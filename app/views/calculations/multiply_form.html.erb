@@ -1,0 +1,11 @@
+<h1>Multiplication</h1>
+
+<%= form_with url: "/multiply/results", method: "get" do %>
+  <label for="first_number">Multiply this:</label>
+  <input type="text" id="first_number" name="first_number">
+
+  <label for="second_number">by this:</label>
+  <input type="text" id="second_number" name="second_number">
+
+  <button type="submit">Multiply!</button>
+<% end %>

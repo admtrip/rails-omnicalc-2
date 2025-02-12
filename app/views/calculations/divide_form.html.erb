@@ -1,0 +1,11 @@
+<h1>Division</h1>
+
+<%= form_with url: "/divide/results", method: "get" do %>
+  <label for="first_number">Divide this:</label>
+  <input type="text" id="first_number" name="first_number">
+
+  <label for="second_number">by this:</label>
+  <input type="text" id="second_number" name="second_number">
+
+  <button type="submit">Divide!</button>
+<% end %>

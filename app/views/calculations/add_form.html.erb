@@ -1,0 +1,11 @@
+<h1>Addition</h1>
+
+<%= form_with url: "/add/results", method: "get" do %>
+  <label for="first_number">Add this:</label>
+  <input type="text" id="first_number" name="first_number">
+
+  <label for="second_number">to this:</label>
+  <input type="text" id="second_number" name="second_number">
+
+  <button type="submit">Add!</button>
+<% end %>

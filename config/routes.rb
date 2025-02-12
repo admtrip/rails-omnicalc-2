@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
+  get "/add", to: "calculations#add_form"
+  get "/add/results", to: "calculations#add_results"
 
-  get("/", { :controller => "addition", :action => "show_addition_form" })
+  get "/subtract", to: "calculations#subtract_form"
+  get "/subtract/results", to: "calculations#subtract_results"
 
-  get("/ad", { :controller => "addition", :action => "show_addition_form" })
-  get("/wizard_add", { :controller => "addition", :action => "add_these" })
+  get "/multiply", to: "calculations#multiply_form"
+  get "/multiply/results", to: "calculations#multiply_results"
 
-  get("/subtract", { :controller => "subtract", :action => "show_sub_form" })
-  get("", { :controller => "subtraction", :action => "subtract" })
-
-  get("/multiply", { :controller => "multiplication", :action => "multiplication" })
-  get("/wizard_multiply", { :controller => "multiplication", :action => "multiply" })
-
-  get("/divide", { :controller => "division", :action => "show_division_form" })
-  get("/wizard_div", { :controller => "div", :action => "divide_these" })
-
+  get "/divide", to: "calculations#divide_form"
+  get "/divide/results", to: "calculations#divide_results"
 end
